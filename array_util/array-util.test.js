@@ -25,11 +25,11 @@ describe('Array Util', () => {
     expect(range(0, 30, 5)).toEqual([0, 5, 10, 15, 20, 25]);
   });
 
-  test.skip("generating zip of ['moe', 'larry'] and [30, 40]", () => {
+  test("generating zip of ['moe', 'larry'] and [30, 40]", () => {
     expect(zip(['moe', 'larry'], [30, 40])).toEqual([['moe', 30], ['larry', 40]]);
   });
 
-  test.skip("generating zip of ['moe', 'larry', 'curly'], [30, 40, 50] and [true, false, false]", () => {
+  test("generating zip of ['moe', 'larry', 'curly'], [30, 40, 50] and [true, false, false]", () => {
     expect(zip(['moe', 'larry', 'curly'], [30, 40, 50], [true, false, false])).toEqual([
       ['moe', 30, true],
       ['larry', 40, false],
@@ -37,19 +37,19 @@ describe('Array Util', () => {
     ]);
   });
 
-  test.skip('removing duplicate values in [1, 2, 1, 4, 1, 3]', () => {
+  test('removing duplicate values in [1, 2, 1, 4, 1, 3]', () => {
     expect(uniq([1, 2, 1, 4, 1, 3])).toEqual([1, 2, 4, 3]);
   });
 
-  test.skip('removing duplicate values in [1, 2, 1, 3, 3]', () => {
+  test('removing duplicate values in [1, 2, 1, 3, 3]', () => {
     expect(uniq([1, 2, 1, 3, 3])).toEqual([1, 2, 3]);
   });
 
-  test.skip('sorting number values in [1, 3, 2]', () => {
+  test('sorting number values in [1, 3, 2]', () => {
     expect(sortNum([1, 3, 2])).toEqual([1, 2, 3]);
   });
 
-  test.skip('sorting number values in [1, 2, 10, 3, 32]', () => {
+  test('sorting number values in [1, 2, 10, 3, 32]', () => {
     expect(sortNum([1, 2, 10, 3, 32])).toEqual([1, 2, 3, 10, 32]);
   });
 });
