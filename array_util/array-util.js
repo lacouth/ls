@@ -11,10 +11,11 @@ function max(array) {
 function range(length, last, step=1) {
   // TODO
   let start;
+  
 
   [start,last] = last ? [length,last] : [0,length] 
-
   let array = []
+  
   for (let i = start; i < last; i+=step) {
     array.push(i)
   }
