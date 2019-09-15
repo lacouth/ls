@@ -9,10 +9,8 @@ function max(array) {
 }
 
 function range(length, last, step=1) {
-  // TODO
-  let start;
   
-
+  let start;
   [start,last] = last ? [length,last] : [0,length] 
   let array = []
   
