@@ -10,7 +10,7 @@ describe('List Generator', () => {
 
     expect(createList(3)).toBe(expected);
   });
-
+ 
   test('making list', () => {
     let expected = `<ul>
   <li>Item 1</li>
