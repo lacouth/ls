@@ -14,8 +14,8 @@ function socksCount(socks){
     // return count
 
     let result = [...new Set(socks)]
-    return result.map( v => parseInt(socks.reduce((acc,s)=> s==v ? ++acc : acc,0) / 2))
-                 .reduce((acc,v)=>acc+v,0)
+    return result.map(v => parseInt(socks.reduce((acc,s)=> s==v ? ++acc : acc, 0) / 2))
+                 .reduce((acc,v)=>acc+v, 0)
     
 }
 
