@@ -1,4 +1,4 @@
-function hackerrank(string){
+function hackerrank(string){ 
     string = string.split('')
     let hack ='hackerrank'
     let last = 0
