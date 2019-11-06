@@ -51,10 +51,6 @@ function atualiza_html(){
     }else{
         imc.setAttribute('class','form-control form-control-lg border border-danger bg-danger text-white')
     }
-
-    
-    
-
 }
 
 button.addEventListener('click', function () {
@@ -66,7 +62,10 @@ document.addEventListener('keyup', function (event) {
     if (event.key == 'Escape') {
         document.querySelector('#altura').value = '';
         document.querySelector('#peso').value = '';
-        document.querySelector('#imc').value = '';
+        let imc  = document.querySelector('#imc')
+        imc.value = '';
+        imc.setAttribute('class','form-control form-control-lg');
+        document.querySelector('#masculino').checked = true;
 
     } else if (event.key == 'Enter') {
         atualiza_html();
